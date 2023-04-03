@@ -6,6 +6,6 @@ framework module CardiOpFramework {
 }
 
 module CardiOpFramework.Swift {
-    header "CardiOpFramework-Swift.h"
-    requires objc
+  header "CardiOpFramework-Swift.h"
+  requires objc
 }

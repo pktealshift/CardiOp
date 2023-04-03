@@ -1,0 +1,947 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardiOpFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "CardiOpFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardiOpConnectionDelegate",
+        "printedName": "CardiOpConnectionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "advertisementUpdated",
+            "printedName": "advertisementUpdated(isAdvertising:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP20advertisementUpdated13isAdvertisingySb_tF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP20advertisementUpdated13isAdvertisingySb_tF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectionEstablished",
+            "printedName": "connectionEstablished(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP21connectionEstablished4withy10Foundation4UUIDV_tF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP21connectionEstablished4withy10Foundation4UUIDV_tF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lostConnection",
+            "printedName": "lostConnection(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP04lostD02toy10Foundation4UUIDV_tF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP04lostD02toy10Foundation4UUIDV_tF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "failedToConnect",
+            "printedName": "failedToConnect(with:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP15failedToConnect4with6reasony10Foundation4UUIDVSg_SStF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP15failedToConnect4with6reasony10Foundation4UUIDVSg_SStF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "heartRateUpdated",
+            "printedName": "heartRateUpdated(bpm:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP16heartRateUpdated3bpm3forySi_10Foundation4UUIDVtF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP16heartRateUpdated3bpm3forySi_10Foundation4UUIDVtF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "usernameUpdated",
+            "printedName": "usernameUpdated(username:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP15usernameUpdated0F03forySS_10Foundation4UUIDVtF",
+            "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP15usernameUpdated0F03forySS_10Foundation4UUIDVtF",
+            "moduleName": "CardiOpFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardiOpFramework.CardiOpConnectionDelegate>",
+            "sugared_genericSig": "<Self where Self : CardiOpFramework.CardiOpConnectionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP",
+        "mangledName": "$s16CardiOpFramework0aB18ConnectionDelegateP",
+        "moduleName": "CardiOpFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardiOpService",
+        "printedName": "CardiOpService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(andNotify:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardiOpConnectionDelegate",
+                "printedName": "CardiOpFramework.CardiOpConnectionDelegate",
+                "usr": "s:16CardiOpFramework0aB18ConnectionDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB7ServiceC5start9andNotifyyAA0aB18ConnectionDelegate_p_tFZ",
+            "mangledName": "$s16CardiOpFramework0aB7ServiceC5start9andNotifyyAA0aB18ConnectionDelegate_p_tFZ",
+            "moduleName": "CardiOpFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendWorkoutStatus",
+            "printedName": "sendWorkoutStatus(started:activity:location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HKWorkoutActivityType",
+                "printedName": "HealthKit.HKWorkoutActivityType",
+                "usr": "c:@E@HKWorkoutActivityType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HKWorkoutSessionLocationType",
+                "printedName": "HealthKit.HKWorkoutSessionLocationType",
+                "usr": "c:@E@HKWorkoutSessionLocationType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16CardiOpFramework0aB7ServiceC17sendWorkoutStatus7started8activity8locationySb_So21HKWorkoutActivityTypeVSo0k15SessionLocationM0VtFZ",
+            "mangledName": "$s16CardiOpFramework0aB7ServiceC17sendWorkoutStatus7started8activity8locationySb_So21HKWorkoutActivityTypeVSo0k15SessionLocationM0VtFZ",
+            "moduleName": "CardiOpFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardiOpService",
+                "printedName": "CardiOpFramework.CardiOpService",
+                "usr": "c:@M@CardiOpFramework@objc(cs)CardiOpService"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CardiOpFramework@objc(cs)CardiOpService(im)init",
+            "mangledName": "$s16CardiOpFramework0aB7ServiceCACycfc",
+            "moduleName": "CardiOpFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CardiOpFramework@objc(cs)CardiOpService",
+        "mangledName": "$s16CardiOpFramework0aB7ServiceC",
+        "moduleName": "CardiOpFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardiOpFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "CardiOpFramework"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 189,
+      "length": 38,
+      "value": "\"CA060047-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 38,
+      "value": "\"CE060041-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 38,
+      "value": "\"CE060043-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 38,
+      "value": "\"CE060047-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 38,
+      "value": "\"CE060048-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 38,
+      "value": "\"CE060041-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 38,
+      "value": "\"CE060043-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 38,
+      "value": "\"CE060047-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 38,
+      "value": "\"CE060048-43E5-11E4-916C-0800200C9A66\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 861,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 967,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1566,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1587,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1645,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1649,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1924,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1947,
+      "length": 67,
+      "value": "\"Peripheral data queue is full. Awaiting peripheralManagerIsReady.\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2153,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2275,
+      "length": 28,
+      "value": "\"License File doenst exist.\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2372,
+      "length": 102,
+      "value": "\"Insufficient Authentication. Please add your license file or contact Bred Ventures for more details.\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2605,
+      "length": 18,
+      "value": "\"licenseEncrypted\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2633,
+      "length": 6,
+      "value": "\"bred\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2857,
+      "length": 27,
+      "value": "\"CardiOp device is UNKNOWN\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2953,
+      "length": 27,
+      "value": "\"CardiOp device is UNKNOWN\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3027,
+      "length": 31,
+      "value": "\"CardiOp device is UNSUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3127,
+      "length": 31,
+      "value": "\"CardiOp device is UNSUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3206,
+      "length": 32,
+      "value": "\"CardiOp device is UNAUTHORIZED\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3307,
+      "length": 32,
+      "value": "\"CardiOp device is UNAUTHORIZED\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3384,
+      "length": 29,
+      "value": "\"CardiOp device is RESETTING\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3482,
+      "length": 29,
+      "value": "\"CardiOp device is RESETTING\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3557,
+      "length": 31,
+      "value": "\"CardiOp device is POWERED OFF\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3657,
+      "length": 31,
+      "value": "\"CardiOp device is POWERED OFF\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3733,
+      "length": 30,
+      "value": "\"CardiOp device is POWERED ON\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3842,
+      "length": 15,
+      "value": "\"Unknown state\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3926,
+      "length": 19,
+      "value": "\"Unknown BLE state\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4128,
+      "length": 65,
+      "value": "\"Failed to add service with error: \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4192,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "Array",
+      "offset": 5166,
+      "length": 5,
+      "value": "[\"1\"]"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "Array",
+      "offset": 5522,
+      "length": 5,
+      "value": "[\"0\"]"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5895,
+      "length": 29,
+      "value": "\"Insufficient Authentication\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6435,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6461,
+      "length": 70,
+      "value": "\"Received heart rate from \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6516,
+      "length": 2,
+      "value": "\" is \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6526,
+      "length": 3,
+      "value": "\" bpm\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7126,
+      "length": 67,
+      "value": "\"Received username from \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7179,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7192,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7561,
+      "length": 130,
+      "value": "\"MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAML3zteU4SnDlmfUgKTIZU9TPaxBuiQ1yDsXTOewppXk8g7JNHPkk0LZra+6hhbPvLtWoNyrRxSMWa22C2Rtou8CAwEAAQ==\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7743,
+      "length": 32,
+      "value": "\"Failed to retrieve public key!\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8346,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8395,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8476,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8545,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8809,
+      "length": 53,
+      "value": "\"License for \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8851,
+      "length": 2,
+      "value": "\" is valid.\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9054,
+      "length": 55,
+      "value": "\"License for \""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9096,
+      "length": 2,
+      "value": "\" is invalid!\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9431,
+      "length": 32,
+      "value": "\"peripheralManagerIsReady again\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9501,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9605,
+      "length": 3,
+      "value": "\"{\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9616,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9658,
+      "length": 4,
+      "value": "\"\\\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9670,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9712,
+      "length": 4,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9724,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9766,
+      "length": 3,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9777,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "Array",
+      "offset": 9937,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10197,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 10744,
+      "length": 38,
+      "value": "\"The signature isn't a base64 string!\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10803,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11090,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11367,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "StringLiteral",
+      "offset": 13393,
+      "length": 26,
+      "value": "\"CardiOp iPhone Equipment\""
+    },
+    {
+      "filePath": "\/Users\/tealshift\/Develop\/BV Packages\/private\/cardiop\/CardiOpFramework\/BluetoothManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13662,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}
